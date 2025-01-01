@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/ahmed/repos/gameboy/build",
+  "command": "/usr/sbin/c++  -I/home/ahmed/repos/gameboy/include -g -std=c++17 -o CMakeFiles/GameboyLib.dir/src/main.cpp.o -c /home/ahmed/repos/gameboy/src/main.cpp",
+  "file": "/home/ahmed/repos/gameboy/src/main.cpp",
+  "output": "CMakeFiles/GameboyLib.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/ahmed/repos/gameboy/build",
+  "command": "/usr/sbin/c++   -g -std=c++17 -Wall -Wextra -pedantic -g -o CMakeFiles/Gameboy.dir/src/main.cpp.o -c /home/ahmed/repos/gameboy/src/main.cpp",
+  "file": "/home/ahmed/repos/gameboy/src/main.cpp",
+  "output": "CMakeFiles/Gameboy.dir/src/main.cpp.o"
+}
+]
