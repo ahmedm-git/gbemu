@@ -1,7 +1,8 @@
 #include <iostream>
+#include <../include/bus.h>
 
 int main(int argc, char *argv[])
 {
-    std::cout << "Hello\n";
+    Bus bus;
     return 0;
 }

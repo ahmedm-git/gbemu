@@ -4,7 +4,7 @@
 # compile CXX with /usr/sbin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ahmed/repos/gameboy/include
+CXX_INCLUDES = -I/home/ahmed/repos/gbemu/include
 
 CXX_FLAGS = -g -std=c++17
 

@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/GameboyLib.dir/src/bus.cpp.o"
+  "CMakeFiles/GameboyLib.dir/src/bus.cpp.o.d"
+  "CMakeFiles/GameboyLib.dir/src/cpu.cpp.o"
+  "CMakeFiles/GameboyLib.dir/src/cpu.cpp.o.d"
   "CMakeFiles/GameboyLib.dir/src/main.cpp.o"
   "CMakeFiles/GameboyLib.dir/src/main.cpp.o.d"
   "lib/libGameboyLib.a"

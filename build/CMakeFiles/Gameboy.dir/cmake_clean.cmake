@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Gameboy.dir/link.d"
+  "CMakeFiles/Gameboy.dir/src/bus.cpp.o"
+  "CMakeFiles/Gameboy.dir/src/bus.cpp.o.d"
+  "CMakeFiles/Gameboy.dir/src/cpu.cpp.o"
+  "CMakeFiles/Gameboy.dir/src/cpu.cpp.o.d"
   "CMakeFiles/Gameboy.dir/src/main.cpp.o"
   "CMakeFiles/Gameboy.dir/src/main.cpp.o.d"
   "bin/Gameboy"

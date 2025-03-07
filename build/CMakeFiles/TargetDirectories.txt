@@ -1,8 +1,8 @@
-/home/ahmed/repos/gameboy/build/CMakeFiles/GameboyLib.dir
-/home/ahmed/repos/gameboy/build/CMakeFiles/Gameboy.dir
-/home/ahmed/repos/gameboy/build/CMakeFiles/edit_cache.dir
-/home/ahmed/repos/gameboy/build/CMakeFiles/rebuild_cache.dir
-/home/ahmed/repos/gameboy/build/CMakeFiles/list_install_components.dir
-/home/ahmed/repos/gameboy/build/CMakeFiles/install.dir
-/home/ahmed/repos/gameboy/build/CMakeFiles/install/local.dir
-/home/ahmed/repos/gameboy/build/CMakeFiles/install/strip.dir
+/home/ahmed/repos/gbemu/build/CMakeFiles/GameboyLib.dir
+/home/ahmed/repos/gbemu/build/CMakeFiles/Gameboy.dir
+/home/ahmed/repos/gbemu/build/CMakeFiles/edit_cache.dir
+/home/ahmed/repos/gbemu/build/CMakeFiles/rebuild_cache.dir
+/home/ahmed/repos/gbemu/build/CMakeFiles/list_install_components.dir
+/home/ahmed/repos/gbemu/build/CMakeFiles/install.dir
+/home/ahmed/repos/gbemu/build/CMakeFiles/install/local.dir
+/home/ahmed/repos/gbemu/build/CMakeFiles/install/strip.dir

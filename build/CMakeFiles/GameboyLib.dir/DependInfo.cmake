@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ahmed/repos/gameboy/src/main.cpp" "CMakeFiles/GameboyLib.dir/src/main.cpp.o" "gcc" "CMakeFiles/GameboyLib.dir/src/main.cpp.o.d"
+  "/home/ahmed/repos/gbemu/src/bus.cpp" "CMakeFiles/GameboyLib.dir/src/bus.cpp.o" "gcc" "CMakeFiles/GameboyLib.dir/src/bus.cpp.o.d"
+  "/home/ahmed/repos/gbemu/src/cpu.cpp" "CMakeFiles/GameboyLib.dir/src/cpu.cpp.o" "gcc" "CMakeFiles/GameboyLib.dir/src/cpu.cpp.o.d"
+  "/home/ahmed/repos/gbemu/src/main.cpp" "CMakeFiles/GameboyLib.dir/src/main.cpp.o" "gcc" "CMakeFiles/GameboyLib.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,1 +1,1 @@
-/usr/sbin/c++ -g -Wl,--dependency-file=CMakeFiles/Gameboy.dir/link.d CMakeFiles/Gameboy.dir/src/main.cpp.o -o bin/Gameboy
+/usr/sbin/c++ -g -Wl,--dependency-file=CMakeFiles/Gameboy.dir/link.d CMakeFiles/Gameboy.dir/src/main.cpp.o CMakeFiles/Gameboy.dir/src/bus.cpp.o CMakeFiles/Gameboy.dir/src/cpu.cpp.o -o bin/Gameboy

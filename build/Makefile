@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ahmed/repos/gameboy
+CMAKE_SOURCE_DIR = /home/ahmed/repos/gbemu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmed/repos/gameboy/build
+CMAKE_BINARY_DIR = /home/ahmed/repos/gbemu/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gameboy/build/CMakeFiles /home/ahmed/repos/gameboy/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gbemu/build/CMakeFiles /home/ahmed/repos/gbemu/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gameboy/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gbemu/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -158,7 +158,7 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/ahmed/repos/gameboy/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/ahmed/repos/gbemu/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -187,6 +187,60 @@ Gameboy: cmake_check_build_system
 Gameboy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gameboy.dir/build.make CMakeFiles/Gameboy.dir/build
 .PHONY : Gameboy/fast
+
+src/bus.o: src/bus.cpp.o
+.PHONY : src/bus.o
+
+# target to build an object file
+src/bus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameboyLib.dir/build.make CMakeFiles/GameboyLib.dir/src/bus.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gameboy.dir/build.make CMakeFiles/Gameboy.dir/src/bus.cpp.o
+.PHONY : src/bus.cpp.o
+
+src/bus.i: src/bus.cpp.i
+.PHONY : src/bus.i
+
+# target to preprocess a source file
+src/bus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameboyLib.dir/build.make CMakeFiles/GameboyLib.dir/src/bus.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gameboy.dir/build.make CMakeFiles/Gameboy.dir/src/bus.cpp.i
+.PHONY : src/bus.cpp.i
+
+src/bus.s: src/bus.cpp.s
+.PHONY : src/bus.s
+
+# target to generate assembly for a file
+src/bus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameboyLib.dir/build.make CMakeFiles/GameboyLib.dir/src/bus.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gameboy.dir/build.make CMakeFiles/Gameboy.dir/src/bus.cpp.s
+.PHONY : src/bus.cpp.s
+
+src/cpu.o: src/cpu.cpp.o
+.PHONY : src/cpu.o
+
+# target to build an object file
+src/cpu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameboyLib.dir/build.make CMakeFiles/GameboyLib.dir/src/cpu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gameboy.dir/build.make CMakeFiles/Gameboy.dir/src/cpu.cpp.o
+.PHONY : src/cpu.cpp.o
+
+src/cpu.i: src/cpu.cpp.i
+.PHONY : src/cpu.i
+
+# target to preprocess a source file
+src/cpu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameboyLib.dir/build.make CMakeFiles/GameboyLib.dir/src/cpu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gameboy.dir/build.make CMakeFiles/Gameboy.dir/src/cpu.cpp.i
+.PHONY : src/cpu.cpp.i
+
+src/cpu.s: src/cpu.cpp.s
+.PHONY : src/cpu.s
+
+# target to generate assembly for a file
+src/cpu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameboyLib.dir/build.make CMakeFiles/GameboyLib.dir/src/cpu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gameboy.dir/build.make CMakeFiles/Gameboy.dir/src/cpu.cpp.s
+.PHONY : src/cpu.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -229,6 +283,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Gameboy"
 	@echo "... GameboyLib"
+	@echo "... src/bus.o"
+	@echo "... src/bus.i"
+	@echo "... src/bus.s"
+	@echo "... src/cpu.o"
+	@echo "... src/cpu.i"
+	@echo "... src/cpu.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -243,7 +303,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/ahmed/repos/gameboy/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/ahmed/repos/gbemu/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

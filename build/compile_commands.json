@@ -1,14 +1,38 @@
 [
 {
-  "directory": "/home/ahmed/repos/gameboy/build",
-  "command": "/usr/sbin/c++  -I/home/ahmed/repos/gameboy/include -g -std=c++17 -o CMakeFiles/GameboyLib.dir/src/main.cpp.o -c /home/ahmed/repos/gameboy/src/main.cpp",
-  "file": "/home/ahmed/repos/gameboy/src/main.cpp",
+  "directory": "/home/ahmed/repos/gbemu/build",
+  "command": "/usr/sbin/c++  -I/home/ahmed/repos/gbemu/include -g -std=c++17 -o CMakeFiles/GameboyLib.dir/src/bus.cpp.o -c /home/ahmed/repos/gbemu/src/bus.cpp",
+  "file": "/home/ahmed/repos/gbemu/src/bus.cpp",
+  "output": "CMakeFiles/GameboyLib.dir/src/bus.cpp.o"
+},
+{
+  "directory": "/home/ahmed/repos/gbemu/build",
+  "command": "/usr/sbin/c++  -I/home/ahmed/repos/gbemu/include -g -std=c++17 -o CMakeFiles/GameboyLib.dir/src/cpu.cpp.o -c /home/ahmed/repos/gbemu/src/cpu.cpp",
+  "file": "/home/ahmed/repos/gbemu/src/cpu.cpp",
+  "output": "CMakeFiles/GameboyLib.dir/src/cpu.cpp.o"
+},
+{
+  "directory": "/home/ahmed/repos/gbemu/build",
+  "command": "/usr/sbin/c++  -I/home/ahmed/repos/gbemu/include -g -std=c++17 -o CMakeFiles/GameboyLib.dir/src/main.cpp.o -c /home/ahmed/repos/gbemu/src/main.cpp",
+  "file": "/home/ahmed/repos/gbemu/src/main.cpp",
   "output": "CMakeFiles/GameboyLib.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/ahmed/repos/gameboy/build",
-  "command": "/usr/sbin/c++   -g -std=c++17 -Wall -Wextra -pedantic -g -o CMakeFiles/Gameboy.dir/src/main.cpp.o -c /home/ahmed/repos/gameboy/src/main.cpp",
-  "file": "/home/ahmed/repos/gameboy/src/main.cpp",
+  "directory": "/home/ahmed/repos/gbemu/build",
+  "command": "/usr/sbin/c++   -g -std=c++17 -Wall -Wextra -pedantic -g -o CMakeFiles/Gameboy.dir/src/main.cpp.o -c /home/ahmed/repos/gbemu/src/main.cpp",
+  "file": "/home/ahmed/repos/gbemu/src/main.cpp",
   "output": "CMakeFiles/Gameboy.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/ahmed/repos/gbemu/build",
+  "command": "/usr/sbin/c++   -g -std=c++17 -Wall -Wextra -pedantic -g -o CMakeFiles/Gameboy.dir/src/bus.cpp.o -c /home/ahmed/repos/gbemu/src/bus.cpp",
+  "file": "/home/ahmed/repos/gbemu/src/bus.cpp",
+  "output": "CMakeFiles/Gameboy.dir/src/bus.cpp.o"
+},
+{
+  "directory": "/home/ahmed/repos/gbemu/build",
+  "command": "/usr/sbin/c++   -g -std=c++17 -Wall -Wextra -pedantic -g -o CMakeFiles/Gameboy.dir/src/cpu.cpp.o -c /home/ahmed/repos/gbemu/src/cpu.cpp",
+  "file": "/home/ahmed/repos/gbemu/src/cpu.cpp",
+  "output": "CMakeFiles/Gameboy.dir/src/cpu.cpp.o"
 }
 ]

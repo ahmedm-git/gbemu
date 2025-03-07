@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ahmed/repos/gameboy
+CMAKE_SOURCE_DIR = /home/ahmed/repos/gbemu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmed/repos/gameboy/build
+CMAKE_BINARY_DIR = /home/ahmed/repos/gbemu/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -88,14 +88,14 @@ clean: CMakeFiles/Gameboy.dir/clean
 CMakeFiles/GameboyLib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameboyLib.dir/build.make CMakeFiles/GameboyLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameboyLib.dir/build.make CMakeFiles/GameboyLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ahmed/repos/gameboy/build/CMakeFiles --progress-num=3,4 "Built target GameboyLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ahmed/repos/gbemu/build/CMakeFiles --progress-num=5,6,7,8 "Built target GameboyLib"
 .PHONY : CMakeFiles/GameboyLib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GameboyLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gameboy/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gbemu/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GameboyLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gameboy/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gbemu/build/CMakeFiles 0
 .PHONY : CMakeFiles/GameboyLib.dir/rule
 
 # Convenience name for target.
@@ -119,14 +119,14 @@ CMakeFiles/GameboyLib.dir/clean:
 CMakeFiles/Gameboy.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gameboy.dir/build.make CMakeFiles/Gameboy.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gameboy.dir/build.make CMakeFiles/Gameboy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ahmed/repos/gameboy/build/CMakeFiles --progress-num=1,2 "Built target Gameboy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ahmed/repos/gbemu/build/CMakeFiles --progress-num=1,2,3,4 "Built target Gameboy"
 .PHONY : CMakeFiles/Gameboy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Gameboy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gameboy/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gbemu/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Gameboy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gameboy/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/repos/gbemu/build/CMakeFiles 0
 .PHONY : CMakeFiles/Gameboy.dir/rule
 
 # Convenience name for target.
@@ -150,7 +150,7 @@ CMakeFiles/Gameboy.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/ahmed/repos/gameboy/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/ahmed/repos/gbemu/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

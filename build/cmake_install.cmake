@@ -1,4 +1,4 @@
-# Install script for directory: /home/ahmed/repos/gameboy
+# Install script for directory: /home/ahmed/repos/gbemu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,25 +43,25 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/ahmed/repos/gameboy/build/bin/Gameboy" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ahmed/repos/gameboy/build/bin/Gameboy")
+  if(EXISTS "$ENV{DESTDIR}/home/ahmed/repos/gbemu/build/bin/Gameboy" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ahmed/repos/gbemu/build/bin/Gameboy")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/ahmed/repos/gameboy/build/bin/Gameboy"
+         FILE "$ENV{DESTDIR}/home/ahmed/repos/gbemu/build/bin/Gameboy"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ahmed/repos/gameboy/build/bin/Gameboy")
+   "/home/ahmed/repos/gbemu/build/bin/Gameboy")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/ahmed/repos/gameboy/build/bin" TYPE EXECUTABLE FILES "/home/ahmed/repos/gameboy/build/bin/Gameboy")
-  if(EXISTS "$ENV{DESTDIR}/home/ahmed/repos/gameboy/build/bin/Gameboy" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ahmed/repos/gameboy/build/bin/Gameboy")
+  file(INSTALL DESTINATION "/home/ahmed/repos/gbemu/build/bin" TYPE EXECUTABLE FILES "/home/ahmed/repos/gbemu/build/bin/Gameboy")
+  if(EXISTS "$ENV{DESTDIR}/home/ahmed/repos/gbemu/build/bin/Gameboy" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/ahmed/repos/gbemu/build/bin/Gameboy")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/sbin/strip" "$ENV{DESTDIR}/home/ahmed/repos/gameboy/build/bin/Gameboy")
+      execute_process(COMMAND "/usr/sbin/strip" "$ENV{DESTDIR}/home/ahmed/repos/gbemu/build/bin/Gameboy")
     endif()
   endif()
 endif()
@@ -69,7 +69,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/ahmed/repos/gameboy/build/install_local_manifest.txt"
+  file(WRITE "/home/ahmed/repos/gbemu/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -85,6 +85,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/ahmed/repos/gameboy/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/ahmed/repos/gbemu/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ahmed/repos/gameboy/src/main.cpp" "CMakeFiles/Gameboy.dir/src/main.cpp.o" "gcc" "CMakeFiles/Gameboy.dir/src/main.cpp.o.d"
+  "/home/ahmed/repos/gbemu/src/bus.cpp" "CMakeFiles/Gameboy.dir/src/bus.cpp.o" "gcc" "CMakeFiles/Gameboy.dir/src/bus.cpp.o.d"
+  "/home/ahmed/repos/gbemu/src/cpu.cpp" "CMakeFiles/Gameboy.dir/src/cpu.cpp.o" "gcc" "CMakeFiles/Gameboy.dir/src/cpu.cpp.o.d"
+  "/home/ahmed/repos/gbemu/src/main.cpp" "CMakeFiles/Gameboy.dir/src/main.cpp.o" "gcc" "CMakeFiles/Gameboy.dir/src/main.cpp.o.d"
   "" "bin/Gameboy" "gcc" "CMakeFiles/Gameboy.dir/link.d"
   )
 

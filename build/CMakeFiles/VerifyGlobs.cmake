@@ -3,11 +3,13 @@
 cmake_policy(SET CMP0009 NEW)
 
 # SOURCES at CMakeLists.txt:19 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ahmed/repos/gameboy/src/*.cpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/ahmed/repos/gbemu/src/*.cpp")
 set(OLD_GLOB
-  "/home/ahmed/repos/gameboy/src/main.cpp"
+  "/home/ahmed/repos/gbemu/src/bus.cpp"
+  "/home/ahmed/repos/gbemu/src/cpu.cpp"
+  "/home/ahmed/repos/gbemu/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/ahmed/repos/gameboy/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/ahmed/repos/gbemu/build/CMakeFiles/cmake.verify_globs")
 endif()
