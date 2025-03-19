@@ -26,16 +26,20 @@ public:
 
 private:
     Bus *m_bus = nullptr;
+
     Register AF;               // Accumulator & flags
     Register BC, DE, HL;       // General purpose registers
     Register PC = { 0x0100 };  // Program counter (start at 0x0100, according to pandocs)
     Register SP = { 0xFFFE };  // Stack pointer (start at 0xFFFE, according to pandocs)
+    bool m_ime = false;        // Interrupt master enable
+    bool m_halt = false;       // Halt flag
+    CPUFlags m_flags;          // Just for convenience
 
     Register *get_r16_from_opcode(uint8_t, size_t);
     uint8_t  *get_r8_from_opcode(uint8_t, size_t);
 
-    template<typename T> void add(T, T, T &, bool);
-    template<typename T> void sub(T, T, T &, bool);
+    template<typename T> void add(T, T, T &);
+    template<typename T> void sub(T, T, T &);
 
     void set_flags(CPUFlags);
 };

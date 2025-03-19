@@ -1,8 +1,8 @@
 #include <iostream>
-#include <../include/bus.h>
+#include <include/cpu.h>
 
 int main(int argc, char *argv[])
 {
-    Bus bus;
+    CPU cpu;
     return 0;
 }
