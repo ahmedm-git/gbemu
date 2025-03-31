@@ -1,2 +1,0 @@
-/usr/sbin/ar qc lib/libGameboyLib.a CMakeFiles/GameboyLib.dir/src/bus.cpp.o CMakeFiles/GameboyLib.dir/src/cpu.cpp.o CMakeFiles/GameboyLib.dir/src/main.cpp.o
-/usr/sbin/ranlib lib/libGameboyLib.a

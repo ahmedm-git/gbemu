@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/my_tests.dir/link.d CMakeFiles/my_tests.dir/test_cpu.cpp.o -o ../bin/my_tests  ../lib/libCatch2Maind.a ../lib/libGameboyLib.a ../lib/libCatch2d.a

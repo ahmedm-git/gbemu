@@ -1,0 +1,5 @@
+if(EXISTS "/home/ahmed/Repos/gbemu/tests/my_tests_tests-b12d07c.cmake")
+  include("/home/ahmed/Repos/gbemu/tests/my_tests_tests-b12d07c.cmake")
+else()
+  add_test(my_tests_NOT_BUILT-b12d07c my_tests_NOT_BUILT-b12d07c)
+endif()

@@ -28,6 +28,15 @@ endif()
 
 add_executable(${PROJECT_NAME} ${SRC_DIR}/main.cpp ${SOURCES})
 
+include(FetchContent)
+FetchContent_Declare(
+  Catch2
+  GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+  GIT_TAG v3.4.0  # Use a recent stable version
+)
+FetchContent_MakeAvailable(Catch2)
+list(APPEND CMAKE_MODULE_PATH ${Catch2_SOURCE_DIR}/extras)
+
 # Print summary
 message(STATUS "Project: ${PROJECT_NAME}")
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
@@ -41,6 +50,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
 elseif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     target_compile_options(${PROJECT_NAME} PRIVATE /W4 /O2)
 endif()
+target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_DIR})
 
 install(TARGETS ${PROJECT_NAME}
     RUNTIME DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
@@ -48,3 +58,5 @@ install(TARGETS ${PROJECT_NAME}
     ARCHIVE DESTINATION ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}
 )
 
+enable_testing()
+add_subdirectory(tests)
